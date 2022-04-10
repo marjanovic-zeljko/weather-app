@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="isMobile">
+    <nav class="navigation">
+        <div class="user icon-bg">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="date">
+            <div id="todaysDate"></div>
+        </div>
+        <div class="settings icon-bg">
+            <i class="fas fa-cog"></i>
+        </div>
+    </nav>
+    <div class="weather__hero">
+        <img class="image" src="" alt="">
+    </div>
+    <div class="info">
+        <div class="location">
+            <span class="location-timezone"></span>
+            <i class="fa fa-location-arrow"></i>
+        </div>
+        <div class="temperature">
+            <div class="temperature-high">
+                <span>High</span>
+                <div>
+                    <span class="temperature-degree-high temp-deg temp-side"></span>
+                    <sup class="degree-side">o</sup>
+                </div>
+            </div>
+            <div class="temperature-current">
+                <span class="temperature-degree  temp-deg"></span>
+                <sup class="degree">o</sup>
+            </div>
+            <div class="temperature-low">
+                <span>Low</span>
+                <div>
+                    <span class="temperature-degree-low  temp-deg temp-side"></span>
+                    <sup class="degree-side">o</sup>
+                </div>
+            </div>
+        </div>
+
+        <div class="temperature-description"></div>
+    </div>
+    <div class="additional-informations">
+        <div class="add__info-bg">
+            <span>UV index</span>
+            <div>
+                <div class="uv-index add__info-text"></div>
+            </div>
+        </div>
+        <div class=" add__info-bg">
+            <span>Sunrise</span>
+            <div>
+                <div class="sunrise add__info-text"></div>
+            </div>
+        </div>
+        <div class=" add__info-bg">
+            <span>Sunset</span>
+            <div>
+                <div class="sunset add__info-text"></div>
+            </div>
+        </div>
+        <div class=" add__info-bg">
+            <span>Humidity</span>
+            <div>
+                <div class="humidity add__info-text"></div>
+            </div>
+        </div>
+        <div class="add__info-bg">
+            <span>Wind</span>
+            <div>
+                <div class="wind add__info-text"></div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="full-weather">
+        <div class="tabs">
+        <div class="today active">
+            Today
+        </div>
+        <div class="tommorow">
+            Tommorow
+        </div>
+        <div class="seven-days">
+            Next 7 days
+        </div>
+    </div>
+        <div class="full-weather-content">
+            <div class="fwc-today">
+                <div class="hour-0">
+                    <span class="hour">Now</span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number">20</div>
+                </div>
+                <div class="hour-1">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-2">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-3">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-4">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-5">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-6">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+            </div>
+            <div class="fwc-tommorow  d-none">
+                <div class="hour-0">
+                    <span class="hour">Now</span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number">20</div>
+                </div>
+                <div class="hour-1">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-2">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-3">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-4">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-5">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-6">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+            </div>
+            <div class="fwc-seven-days d-none">
+                <div class="hour-0">
+                    <span class="hour">Now</span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number">20</div>
+                </div>
+                <div class="hour-1">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-2">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-3">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-4">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-5">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+                <div class="hour-6">
+                    <span class="hour"></span>
+                    <img class="image" src="" alt="">
+                    <div class="degree-number"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
